@@ -30,7 +30,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 
-app.MapGet("/hello", () => "Hello from your Render API running .NET 9/10");
+app.MapGet("/hello", () => "Updated hello endpoint for CI/CD test");
 
 app.Run();
 
