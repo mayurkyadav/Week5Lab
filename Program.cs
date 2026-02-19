@@ -8,6 +8,7 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
 
+//Controllers
 builder.Services.AddControllers();
 
 // Swagger
@@ -30,7 +31,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 
-app.MapGet("/hello", () => "Updated hello endpoint for CI/CD test");
+app.MapGet("/hello", () => "The API has been updated through CI and CD");
 
 app.Run();
 
